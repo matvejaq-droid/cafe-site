@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Готовый сайт для небольшой кофейни: меню, атмосфера, отзывы и онлайн-бронирование столика.">
+  <meta name="theme-color" content="#f8f3ec">
+  <title>Кафе «Утро» — готовый сайт для кофейни</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-cafe">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header" id="header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#main" aria-label="Кафе Утро — на главную">
+        <span class="logo__mark">У</span>
+        <span class="logo__text">утро<span class="logo__dot">.</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Главное меню">
+        <a href="#about">О нас</a>
+        <a href="#menu">Меню</a>
+        <a href="#features">Почему мы</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">Вопросы</a>
+        <a class="btn btn--small btn--dark nav__cta" href="#booking">Забронировать</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero hero--cafe">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="badge"><span class="badge__dot"></span> Районная кофейня с 2019 года</span>
+          <h1>Кофе, ради которого хочется <em>выйти из дома</em></h1>
+          <p class="hero__lead">
+            Небольшое кафе, где знают ваше имя и помнят, как вы пьёте кофе.
+            Свежая выпечка, спокойная музыка и столик, за которым хочется остаться.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#menu">Посмотреть меню <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="#booking">Забронировать столик</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>7 лет</strong><span>кормим район завтраками</span></li>
+            <li><strong>4,9 ★</strong><span>средняя оценка гостей</span></li>
+            <li><strong>с 7:00</strong><span>каждый день, без выходных</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="cup-scene">
+            <div class="steam steam--1"></div>
+            <div class="steam steam--2"></div>
+            <div class="steam steam--3"></div>
+            <div class="saucer"></div>
+            <div class="cup">
+              <div class="cup__top"><div class="cup__coffee"><span class="cup__heart">♥</span></div></div>
+              <div class="cup__body"><span class="cup__logo">утро.</span></div>
+            </div>
+            <div class="float-card float-card--top">
+              <span class="float-card__icon">●</span>
+              <div><strong>Свежая выпечка</strong><span>печём каждое утро</span></div>
+            </div>
+            <div class="float-card float-card--bottom">
+              <span class="float-card__icon float-card__icon--green">✓</span>
+              <div><strong>Своя обжарка</strong><span>новое зерно каждую неделю</span></div>
+            </div>
+            <div class="bean bean--1"></div><div class="bean bean--2"></div><div class="bean bean--3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="partners" aria-label="Наши поставщики">
+      <div class="container"><p>Работаем с локальными поставщиками</p></div>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>ХЛЕБОПЁК №1</span><span>◆</span><span>ФЕРМА «ЗЕЛЁНЫЙ ЛУГ»</span><span>◆</span>
+          <span>ROAST LAB</span><span>◆</span><span>МОЛОКО ОТ БАБУШКИ</span><span>◆</span>
+          <span>МЁД И ПЧЁЛЫ</span><span>◆</span><span>ХЛЕБОПЁК №1</span><span>◆</span>
+          <span>ФЕРМА «ЗЕЛЁНЫЙ ЛУГ»</span><span>◆</span><span>ROAST LAB</span><span>◆</span>
+          <span>МОЛОКО ОТ БАБУШКИ</span><span>◆</span><span>МЁД И ПЧЁЛЫ</span><span>◆</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <span class="eyebrow">О нас</span>
+          <h2>Место, куда хочется возвращаться</h2>
+          <p>
+            Мы открыли «Утро» в маленьком доме на тихой улице. Хотелось сделать кафе,
+            в которое заходишь не только ради кофе, но и ради пяти минут тишины.
+          </p>
+          <p>
+            За эти семь лет у нас появились постоянные гости, любимые рецепты и свой
+            характер. Мы всё так же печём булочки сами и знаем, кто пьёт латте без сахара.
+          </p>
+          <a class="text-link" href="#features">Узнать, чем мы отличаемся →</a>
+        </div>
+        <div class="story-art reveal" aria-hidden="true">
+          <div class="story-art__window"></div>
+          <div class="story-art__plant story-art__plant--1"></div>
+          <div class="story-art__plant story-art__plant--2"></div>
+          <div class="story-art__cup">☕</div>
+          <span class="story-art__caption">угол, где всегда пахнет кофе</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section--tint" id="menu">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div>
+            <span class="eyebrow">Меню</span>
+            <h2>Что у нас вкусного</h2>
+          </div>
+          <a class="text-link" href="#booking">Забронировать столик →</a>
+        </div>
+
+        <div class="tabs reveal" data-tabs>
+          <div class="tab-list" role="tablist" aria-label="Категории меню">
+            <button class="tab-btn is-active" type="button" role="tab" aria-selected="true" data-tab="coffee">Кофе</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="bakery">Выпечка</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" data-tab="breakfast">Завтраки</button>
+          </div>
+
+          <div class="tab-panels">
+            <div class="tab-panel is-active" data-panel="coffee" role="tabpanel">
+              <div class="menu-grid">
+                <article class="menu-item"><div><h4>Эспрессо</h4><p>Плотный, с нотами какао</p></div><span>190 ₽</span></article>
+                <article class="menu-item"><div><h4>Капучино</h4><p>Классика с густой молочной пеной</p></div><span>260 ₽</span></article>
+                <article class="menu-item"><div><h4>Флэт уайт</h4><p>Мягкий и сбалансированный</p></div><span>280 ₽</span></article>
+                <article class="menu-item"><div><h4>Раф «Клен»</h4><p>С кленовым сиропом и сливками</p></div><span>320 ₽</span></article>
+                <article class="menu-item"><div><h4>Фильтр-кофе</h4><p>Смена лота каждую неделю</p></div><span>250 ₽</span></article>
+                <article class="menu-item"><div><h4>Матча-латте</h4><p>Японская матча на молоке</p></div><span>310 ₽</span></article>
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="bakery" role="tabpanel">
+              <div class="menu-grid">
+                <article class="menu-item"><div><h4>Круассан с маслом</h4><p>Слоёный, печём с 6 утра</p></div><span>180 ₽</span></article>
+                <article class="menu-item"><div><h4>Булочка с корицей</h4><p>Тепло, ароматно, с глазурью</p></div><span>210 ₽</span></article>
+                <article class="menu-item"><div><h4>Банановый хлеб</h4><p>С грецким орехом</p></div><span>230 ₽</span></article>
+                <article class="menu-item"><div><h4>Сырники</h4><p>Со сметаной и ягодным соусом</p></div><span>290 ₽</span></article>
+              </div>
+            </div>
+            <div class="tab-panel" data-panel="breakfast" role="tabpanel">
+              <div class="menu-grid">
+                <article class="menu-item"><div><h4>Тост с авокадо</h4><p>Яйцо пашот, зерновой хлеб</p></div><span>390 ₽</span></article>
+                <article class="menu-item"><div><h4>Сырный тост</h4><p>Три сыра и травами</p></div><span>370 ₽</span></article>
+                <article class="menu-item"><div><h4>Гранола с йогуртом</h4><p>Ягоды, мёд, орехи</p></div><span>320 ₽</span></article>
+                <article class="menu-item"><div><h4>Яичница по-деревенски</h4><p>С картофелем и зеленью</p></div><span>350 ₽</span></article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Почему к нам возвращаются</span>
+          <h2>Маленькие детали, из которых складывается утро</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M17 9h2a3 3 0 0 1 0 6h-2"/><path d="M8 3c0 1-1 1-1 2M12 3c0 1-1 1-1 2"/></svg>
+            </div>
+            <h3>Кофе со характером</h3>
+            <p>Меняем лот каждую неделю и всегда расскажем, откуда он и как его лучше пить.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21c5-3 7-7 7-12-5 0-9 2-11 6"/><path d="M12 21c-5-3-7-7-7-12 5 0 9 2 11 6"/><path d="M12 21v-7"/></svg>
+            </div>
+            <h3>Всё своё, свежее</h3>
+            <p>Выпечку ставим в печь до открытия. К вечеру обновляем витрину — без вчерашних булочек.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><path d="M9 3.5h6"/></svg>
+            </div>
+            <h3>Не спешим</h3>
+            <p>У нас нельзя «на бегу». Можно прийти с книгой, ноутбуком или просто посидеть у окна.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.5 7.2L4 20l.8-4.5A8 8 0 1 1 20 12z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>
+            </div>
+            <h3>Знаем гостей</h3>
+            <p>Запомним ваш заказ и предложат то, что понравится. Здесь вы не просто ещё один клиент.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section section--tint" id="reviews">
+      <div class="container">
+        <div class="section-head section-head--row reveal">
+          <div><span class="eyebrow">Отзывы</span><h2>Что говорят гости</h2></div>
+          <div class="slider-controls">
+            <button class="circle-btn" id="reviewsPrev" type="button" aria-label="Предыдущий отзыв">←</button>
+            <button class="circle-btn" id="reviewsNext" type="button" aria-label="Следующий отзыв">→</button>
+          </div>
+        </div>
+        <div class="reviews-track" id="reviewsTrack" tabindex="0" aria-label="Отзывы гостей">
+          <article class="review-card reveal"><div class="review-card__stars" aria-label="5 из 5">★★★★★</div><p>Лучший круассан в районе. Прихожу каждую субботу, и мне уже не надо ничего заказывать — знают сами.</p><div class="review-card__author"><span class="avatar">АК</span><div><strong>Анна К.</strong><small>постоянный гость</small></div></div></article>
+          <article class="review-card reveal"><div class="review-card__stars" aria-label="5 из 5">★★★★★</div><p>Работаю рядом и почти каждый день заглядываю сюда между встречами. Тихо, быстро и всегда вкусно.</p><div class="review-card__author"><span class="avatar avatar--green">ДМ</span><div><strong>Дмитрий М.</strong><small>сосед по улице</small></div></div></article>
+          <article class="review-card reveal"><div class="review-card__stars" aria-label="5 из 5">★★★★★</div><p>Забронировала столик на день рождения — поставили свежую выпечку и написали открытку. Очень трогательно.</p><div class="review-card__author"><span class="avatar avatar--rose">МС</span><div><strong>Мария С.</strong><small>праздновали здесь</small></div></div></article>
+          <article class="review-card reveal"><div class="review-card__stars" aria-label="5 из 5">★★★★★</div><p>Фильтр-кофе здесь меняется каждую неделю — это маленькое приключение. Ни разу не разочаровался.</p><div class="review-card__author"><span class="avatar avatar--sand">ИП</span><div><strong>Игорь П.</strong><small>любитель фильтра</small></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-head reveal">
+          <span class="eyebrow">Вопросы</span>
+          <h2>Что спрашивают перед визитом</h2>
+          <p>Не нашли ответ? Позвоните или напишите — мы всегда на связи.</p>
+          <a class="text-link" href="#booking">Задать вопрос →</a>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item" open><summary>Можно ли забронировать столик?</summary><p>Да, через форму на этой странице или по телефону. Держим столик 15 минут после назначенного времени.</p></details>
+          <details class="faq-item"><summary>Есть ли варианты без молока и глютена?</summary><p>Да: растительное молоко (овсяное, миндальное, соевое) и безглютеновые десерты. Уточните у бариста при заказе.</p></details>
+          <details class="faq-item"><summary>Работаете ли вы в выходные?</summary><p>Да, каждый день с 7:00 до 22:00. По выходным ближе к вечеру бывает мест меньше — лучше бронировать заранее.</p></details>
+          <details class="faq-item"><summary>Можно заказать кофе навынос?</summary><p>Конечно. Любой напиток соберём в стакан и добавим печенье в подарок. Скидка 10% при заказе от трёх стаканов.</p></details>
+          <details class="faq-item"><summary>Можно прийти с ноутбуком?</summary><p>Да, у нас есть розетки у большинства столиков и Wi-Fi. Просим только не занимать столики на пиковых часах дольше двух часов.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section booking" id="booking">
+      <div class="container booking__grid">
+        <div class="booking__copy reveal">
+          <span class="eyebrow eyebrow--light">Забронировать</span>
+          <h2>Оставьте заявку — сохраним столик</h2>
+          <p>Укажите удобное время, и мы подготовим место. Если планы поменяются — просто позвоните, мы всё перенесём.</p>
+          <ul class="booking__perks">
+            <li>✓ Без предоплаты и комиссий</li>
+            <li>✓ Подтверждение в течение 15 минут</li>
+            <li>✓ Можно перенести в один звонок</li>
+          </ul>
+          <div class="booking__contacts">
+            <p><span>Адрес</span> ул. Тихвая, 12, центр</p>
+            <p><span>Часы</span> ежедневно, 7:00–22:00</p>
+            <p><span>Телефон</span> <a href="tel:+78005553535">8 800 555-35-35</a></p>
+          </div>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm" novalidate>
+          <div class="field">
+            <label for="name">Ваше имя</label>
+            <input id="name" name="name" type="text" placeholder="Например, Анна" autocomplete="name" data-validate="text" data-label="Имя">
+            <span class="field__error" data-error-for="name"></span>
+          </div>
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" placeholder="+7 (999) 123-45-67" autocomplete="tel" data-validate="phone" data-label="Телефон">
+            <span class="field__error" data-error-for="phone"></span>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Дата визита</label>
+              <input id="date" name="date" type="date">
+            </div>
+            <div class="field">
+              <label for="time">Время</label>
+              <input id="time" name="time" type="time">
+            </div>
+          </div>
+          <div class="field">
+            <label for="guests">Сколько вас?</label>
+            <select id="guests" name="guests">
+              <option value="1">1 гость</option>
+              <option value="2" selected>2 гостя</option>
+              <option value="3">3 гостя</option>
+              <option value="4">4 гостя</option>
+              <option value="5+">5 и больше</option>
+            </select>
+          </div>
+          <label class="checkbox">
+            <input id="consent" name="consent" type="checkbox" data-validate="checkbox" data-label="Согласие">
+            <span class="checkbox__box" aria-hidden="true"></span>
+            <span>Согласен(на) на обработку персональных данных</span>
+          </label>
+          <span class="field__error field__error--checkbox" data-error-for="consent"></span>
+          <button class="btn btn--primary btn--block" type="submit">Забронировать столик →</button>
+          <p class="form-success" id="formSuccess" role="status" hidden><strong>Готово! ✓</strong> Мы получили заявку и скоро вам позвоним.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo logo--footer" href="#main"><span class="logo__mark">У</span><span class="logo__text">утро<span class="logo__dot">.</span></span></a>
+        <p>Маленькая кофейня с большим характером.</p>
+      </div>
+      <div class="footer__col"><h4>Сайт</h4><a href="#about">О нас</a><a href="#menu">Меню</a><a href="#features">Почему мы</a><a href="#reviews">Отзывы</a></div>
+      <div class="footer__col"><h4>Контакты</h4><a href="mailto:hello@utro.coffee">hello@utro.coffee</a><a href="tel:+78005553535">8 800 555-35-35</a><span>ул. Тихвая, 12</span></div>
+      <div class="footer__col"><h4>Мы в сети</h4><a href="#main">Instagram</a><a href="#main">Telegram</a><a href="#main">VK</a></div>
+    </div>
+    <div class="container footer__bottom"><span>© <span id="year">2026</span> Кафе «Утро»</span><span>Сделано с любовью к кофе ☕</span></div>
+  </footer>
+
+  <div class="demo-switch" aria-label="Демо-версии сайта">
+    <span>Демо:</span>
+    <a class="is-current" href="index.html" aria-current="page">Кафе</a>
+    <a href="barbershop.html">Барбершоп</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
